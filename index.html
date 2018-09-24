@@ -41,19 +41,61 @@
       <h1 class="header">Pictures of Lemons</h1>
       <div class="row">
         <div class="column">
-          <img src="images/tree.jpg" alt="tree" style="width:100%">
-          <img src="images/slices.jpg" alt="slices" style="width:100%">
-          <img src="images/plate.jpg" alt="plate" style="width:100%">
-          <img src="images/onecut.jpg" alt="one cut" style="width:100%">
+          <img class="onHover" src="images/tree.jpg" onclick="openModal();currentSlide(1)" alt="tree" style="width:100%">
+          <img class="onHover" src="images/slices.jpg" onclick="openModal();currentSlide(3)" alt="slices" style="width:100%">
+          <img class="onHover" src="images/plate.jpg" onclick="openModal();currentSlide(5)" alt="plate" style="width:100%">
+          <img class="onHover" src="images/onecut.jpg" onclick="openModal();currentSlide(7)" alt="one cut" style="width:100%">
           
         </div>
         <div class="column">
-          <img src="images/bowl.jpg" alt="bowl" style="width:100%">
-          <img src="images/box.jpg" alt="box" style="width:100%">
-          <img src="images/lemonade.jpg" alt="lemonade" style="width:100%">
-          <img src="images/falling.jpg" alt="falling slice" style="width:100%">
+          <img class="onHover" src="images/bowl.jpg" onclick="openModal();currentSlide(2)" alt="bowl" style="width:100%">
+          <img class="onHover" src="images/box.jpg" onclick="openModal();currentSlide(4)" alt="box" style="width:100%">
+          <img class="onHover" src="images/lemonade.jpg" onclick="openModal();currentSlide(6)" alt="lemonade" style="width:100%">
+          <img class="onHover" src="images/falling.jpg" onclick="openModal();currentSlide(8)" alt="falling slice" style="width:100%">
+        </div>
+      </div> 
+      <div id='myModal' class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 8</div>
+            <img src="images/tree.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 8</div>
+            <img src="images/bowl.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">3 / 8</div>
+              <img src="images/slices.jpg" style="width:100%">
+            </div>
+          <div class="mySlides">
+              <div class="numbertext">4 / 8</div>
+              <img src="images/box.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">5 / 8</div>
+              <img src="images/plate.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">6 / 8</div>
+              <img src="images/lemonade.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">7 / 8</div>
+              <img src="images/onecut.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">8 / 8</div>
+              <img src="images/falling.jpg" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
+      
 
       </ul>
     </div>
