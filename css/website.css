@@ -10,7 +10,9 @@ body>div.container {
 }
 .icon-bar{
   width: 90px;
-  background-color: #555
+  position: fixed;
+  
+  border-radius: 20px;
 }
 .icon-bar a{
   display: block;
@@ -19,12 +21,14 @@ body>div.container {
   transition: all 0.3s ease;
   color: white;
   font-size: 36px;
+  border-radius: 20px;
 }
 .icon-bar a:hover {
-  background-color: #000;
+  background-color: #555;
 }
 .active {
-  background-color: yellow; 
+  background-color: rgba(253, 228, 2, 0.952);
+  border-radius: 20px;
 }
 .header{
   text-align: center;
@@ -38,7 +42,10 @@ body>div.container {
 .lone{
   width: 50%;
   display: block;
-  margin:auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:10px;
   border: 10px;
   border-style: double;
   border-color: rgba(233, 207, 61, 0.884);
