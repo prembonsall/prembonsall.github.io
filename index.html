@@ -3,6 +3,7 @@
   <head>
     <title>Pictures of Lemons</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -15,13 +16,13 @@
     <script src="js/website.js"></script>
   </head>
   <body>
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <div  class="icon-bar">
         <a class="active" href="index.html"><i class="fa fa-fw fa-lemon"></i></a>
         <a href="pitchers.html"><i class="fa fa-fw fa-fill-drip"></i></a>
         <a href="friends.html"><i class="fa fa-fw fa-users"></i></a>
-      </div>
-    <img class="lone" src="images/alone.jpg" alt = "Lone Lemon">
+        <a href="about.html"><i class="fa fa-fw fa-smile"></i></a>
+    </div>
+    <img class="lone" id="top" src="images/alone.jpg" alt = "Lone Lemon">
     <div class="container">
 
       <h1 class="header">Pictures of Lemons</h1>
@@ -81,9 +82,10 @@
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
-      
-
-      </ul>
     </div>
+    <footer>
+      <a href="#top"><button class="btn">Back to top</button></a>
+      <p>No lemons were harmed in the creation of this site.</p>
+    </footer>
   </body>
 </html>

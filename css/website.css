@@ -3,6 +3,9 @@ body {
   background-color: black;
   margin: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 body>div.container {
   width: 70%;
   margin: auto;
@@ -48,7 +51,7 @@ body>div.container {
   margin-top:10px;
   border: 10px;
   border-style: double;
-  border-color: rgba(233, 207, 61, 0.884);
+  border-color: rgba(253, 228, 2, 0.952);
 }
 /* Responsive images */
   .row{
@@ -187,4 +190,24 @@ img.onHover {
   .modal-content {
       width: 100%;
   }
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgba(253, 228, 2, 0.952);
+}
+.btn{
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 14px 28px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.btn:hover{
+  background-color: #555;
+  color: white;
 }
