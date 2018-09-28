@@ -18,13 +18,89 @@
   </head>
   <body>
     <div  class="icon-bar">
-      <a href="index.html"><i class="fa fa-fw fa-lemon"></i></a>
-      <a href="pitchers.html"><i class="fa fa-fw fa-fill-drip"></i></a>
-      <a class="active" href="friends.html"><i class="fa fa-fw fa-users"></i></a>
-      <a href="about.html"><i class="fa fa-fw fa-smile"></i></a>
+      <a href="index.html" title="Home"><i class="fa fa-fw fa-lemon"></i></a>
+      <a href="pitchers.html" title="Pitchers"><i class="fa fa-fw fa-fill-drip"></i></a>
+      <a class="active" href="friends.html" title="Friends"><i class="fa fa-fw fa-users"></i></a>
+      <a href="about.html" title="About Us"><i class="fa fa-fw fa-smile"></i></a>
   </div>
+  <img src="images/friends/apple-bell-peppers-food-53525.jpg" class="lone" alt="">
     <div class="container">
       <h1 class="header">Friends</h1>
+      <div class="row">
+          <div class="column">
+            <img class="onHover" src="images/friends/brooke-lark-209712-unsplash.jpg" onclick="openModal();currentSlide(1)" alt="tree" style="width:100%">
+            <img class="onHover" src="images/friends/multi.jpg" onclick="openModal();currentSlide(3)" alt="slices" style="width:100%">
+            <img class="onHover" src="images/friends/lime.jpg" onclick="openModal();currentSlide(5)" alt="plate" style="width:100%">
+            <img class="onHover" src="images/friends/brooke-lark-537698-unsplash.jpg" onclick="openModal();currentSlide(7)" alt="one cut" style="width:100%">
+            <img class="onHover" src="images/friends/monika-grabkowska-598807-unsplash.jpg" onclick="openModal();currentSlide(9)" alt="falling slice" style="width:100%">
+            
+          </div>
+          <div class="column">
+            <img class="onHover" src="images/friends/apples-chopping-board-citrus-793763.jpg" onclick="openModal();currentSlide(2)" alt="bowl" style="width:100%">
+            <img class="onHover" src="images/friends/brooke-lark-194251-unsplash.jpg" onclick="openModal();currentSlide(4)" alt="box" style="width:100%">
+            <img class="onHover" src="images/friends/chop-chopped-citrus-1414131.jpg" onclick="openModal();currentSlide(6)" alt="lemonade" style="width:100%">
+            <img class="onHover" src="images/friends/pepper.jpg" onclick="openModal();currentSlide(8)" alt="falling slice" style="width:100%">
+            <img class="onHover" src="images/friends/luke-michael-27050-unsplash.jpg" onclick="openModal();currentSlide(10)" alt="falling slice" style="width:100%">
+            <img class="onHover" src="images/friends/nathalie-jolie-549521-unsplash.jpg" onclick="openModal();currentSlide(11)" alt="falling slice" style="width:100%">
+          </div>
+        </div> 
+        <div id='myModal' class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+  
+            <div class="mySlides">
+              <div class="numbertext">1 / 11</div>
+              <img src="images/friends/gallery/1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">2 / 11</div>
+              <img src="images/friends/gallery/2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 11</div>
+                <img src="images/friends/gallery/3.jpg" style="width:100%">
+              </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 11</div>
+                <img src="images/friends/gallery/4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 11</div>
+                <img src="images/friends/gallery/5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 11</div>
+                <img src="images/friends/gallery/6.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 11</div>
+                <img src="images/friends/gallery/7.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 11</div>
+                <img src="images/friends/gallery/8.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 11</div>
+                <img src="images/friends/gallery/9.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">10 / 11</div>
+                <img src="images/friends/gallery/10.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">11 / 11</div>
+                <img src="images/friends/gallery/11.jpg" style="width:100%">
+            </div> 
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <a href="#top"><button class="btn">Back to top</button></a>
+        <p>No lemons were harmed in the creation of this site.</p>
+      </footer>
     </div>
   </body>
 </html>

@@ -26,9 +26,11 @@ body>div.container {
   font-size: 36px;
   border-radius: 20px;
 }
+
 .icon-bar a:hover {
   background-color: #555;
 }
+
 .active {
   background-color: rgba(253, 228, 2, 0.952);
   border-radius: 20px;
@@ -101,7 +103,7 @@ body>div.container {
   background-color: black;
   margin: auto;
   padding: 0;
-  width: 40%;
+  width: 58%;
   max-width: 1000px;
 }
 
@@ -181,10 +183,11 @@ img.onHover {
   border: 1px;
   padding: 0.5%;
   cursor: pointer;
-  transition: 0.2s;
+  transition: transform 0.2s;
   border-radius: 25px;
 }
-.onHover:hover {opacity: 0.7;}
+.onHover:hover {opacity: 0.7;
+}
 
 @media only screen and (max-width: 700px){
   .modal-content {
