@@ -235,10 +235,11 @@ footer{
   padding: 16px;
   text-align: center;
   background-color: rgba(253, 228, 2, 0.952);
-  color: white;
+  color: black;
   margin-top: 10%;
   margin-bottom: 10%;
   border-radius: 20px;
 }
 
-.fas {font-size:50px;}
+.fas {font-size:50px;
+color: #555;}
