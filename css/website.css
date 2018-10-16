@@ -74,12 +74,7 @@ body>div.container {
     font-size: 4vw;
   }
 }
-.sub-head{
-  color: white;
-  text-align: center;
-  font-size: 5vw;
-  font-family: "serif_gothic_blackregular";
-}
+
 /* Responsive images */
   .row{
     display: flex;
@@ -210,6 +205,14 @@ footer{
   width: 50%;
 }
 /* About Page */
+
+.sub-head{
+  color: white;
+  text-align: center;
+  font-size: 5vw;
+  font-family: "serif_gothic_blackregular";
+}
+
 .row-about{
   margin: 0 -5px;
 }
@@ -241,4 +244,64 @@ footer{
 }
 
 .fas {font-size:50px;
-color: #555;}
+color: rgb(22, 22, 22);}
+
+
+.donate{
+  text-align: center;
+  font-size: 1.5vw;
+}
+.donate-button{
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+/* Snackbar */ 
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff; 
+  text-align: center;
+  border-radius: 15px; 
+  padding: 16px;
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+ However, delay the fade out process for 2.5 seconds */
+ -webkit-animation: fadein 0.5s, fadeout 1s 2.5s;
+ animation: fadein 0.5s, fadeout 1s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
