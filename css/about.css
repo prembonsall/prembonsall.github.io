@@ -1,0 +1,107 @@
+/* About Page */
+  .about{
+    text-align: center;
+    font-size: 2vw;
+  }
+  @media screen and (max-width: 400px){
+    .about {
+      font-size: 4vw;
+    }
+  }
+  /* Accomplishments text */
+  .sub-head{
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+    font-family: "serif_gothic_blackregular";
+  }
+/* Cards with accomplishments */
+  .row-about{
+    margin: 0 -5px;
+  }
+  .column-about{
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+  }
+  .row-about:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .card {
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(253, 228, 2, 0.952);
+    color: black;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 20px;
+  }
+  .fas {font-size:50px;
+  color: rgb(22, 22, 22);
+  }
+
+  @media screen and (max-width: 600px) {
+    .column-about {
+      width: 100%;
+      display: block;   
+    }
+  }
+
+/* Donate Button */
+  .donate{
+    text-align: center;
+    font-size: 1.5vw;
+  }
+  .donate-button{
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+/* Snackbar */ 
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff; 
+    text-align: center;
+    border-radius: 15px; 
+    padding: 16px;
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+  }
+  
+  #snackbar.show {
+    visibility: visible; 
+    /* Fade out after 1.5s delay */
+   -webkit-animation: fadein 0.5s, fadeout 1s 1.5s; 
+   animation: fadein 0.5s, fadeout 1s 1.5s;
+  }
+  
+  /* Animations to fade the snackbar */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }

@@ -1,0 +1,33 @@
+/* Nav */
+.icon-bar{
+    width: 90px;
+    position: fixed;
+    
+    border-radius: 20px;
+  }
+  .icon-bar a{
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+    border-radius: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #555;
+  }
+  .active {
+    background-color: rgba(253, 228, 2, 0.952);
+    border-radius: 20px;
+  }
+  @media screen and (max-width: 425px) {
+    .icon-bar a {
+      width: 50%;
+      font-size: 20px;
+      border-radius: 15px;
+      padding: 11px;
+    } 
+  }
+  
