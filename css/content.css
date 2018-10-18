@@ -41,11 +41,10 @@
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 200px;
+    padding-top: 10%;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
     overflow: auto;
     background-color:black;
   }
@@ -56,17 +55,18 @@
     background-color: black;
     margin: auto;
     padding: 0;
-    max-width: 1000px;
+    max-width: 100%;
   }
   
   /* The Close Button */
   .close {
     color: white;
     position: fixed;
-    top: 40px;
-    right: 25px;
-    font-size: 100px;
+    top: 5%;
+    right: 5%;
+    font-size: 8vw;
     font-weight: bold;
+    z-index: 99;
   }
   
   .close:hover,
@@ -83,18 +83,30 @@
     position: absolute;
     top: 0;
   }
-  /* Responsive */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-  }
-  
+
 /* Carousel */
 .carousel-inner{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
   }
   
+  /* Responsive */
+  @media only screen and (max-width: 700px){
+    .carousel-inner{
+      width: 100%;
+      height: 100%;
+    }
+    .modal{
+      padding-top: 30%;
+    }
+    .close{
+      top: 3%;
+      font-size: 70px; 
+    }
+  }
+  .pitchers{
+    width: 40%;
+    height: 90%;
+  }
