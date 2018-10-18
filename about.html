@@ -4,7 +4,7 @@
   <head>
     <title>About Us</title>
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
     <!-- icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Latest compiled and minified CSS -->
@@ -29,13 +29,11 @@
     <img src="images/citrus-fruit-food-fruit-635537.jpg" class="lone" alt="">
     <div class="container">
       <h1 class="header">About Us</h1>
-      <p class="about">The concept for this art piece/website came naturally as we grew jealous of countries
+      <p class="explain">The concept for this art piece/website came naturally as we grew jealous of countries
         with national fruits and wanted to promote #lemonsforbritain. You may dispute that since they are native to South Asia they cannot
         be our fruit, to that we say, are we not a country of accepting people and fruits from all over and accepting them as our own. 
       </p>
-    </div>
-    <h2 class="sub-head">Our Accomplishments Thus Far</h2>
-    <div class="container">
+
       <div class="row-about">
         <div class="column-about">
           <div class="card">
@@ -66,10 +64,48 @@
           </div>
         </div>
       </div>
+
+      <div class="row-about">
+        <div class="column-donate">
+          <h2 class="contact">Feeling generous?</h2>
+          <div class="row-about">
+            <div class="column-donate">
+              <div class="donate">
+                <p>Chip in to the lemon fund! All proceeds to a good cause.<p>
+              </div>
+            </div>
+            <div class="column-donate">
+              <div class="place"> 
+                <button onclick="getText();openSnackbar()" class="donate-button">Donate!</button> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-donate">
+          <h2 class="contact">Got Lemons?</h2>
+          <div class="place">
+            <button type="button" data-toggle="modal" data-target="#shareModal" class="donate-button">Share Them!</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="donate">
-      <button onclick="getText();openSnackbar()" class="donate-button">Donate!</button> 
+
+    <div id="shareModal" class="modal">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3>Whoops</h3>
+          </div>
+          <div class="modal-body">
+            <p>Didn't get this far unfortunately :(</p>
+            <p>Just imagine it's a fancy image submission email thing.<p>
+          </div>
+        </div>
+      </div>
     </div>
+
     <p id="snackbar"></p> 
     <footer>
         <a href="#top"><button class="btn">Back to top</button></a>
