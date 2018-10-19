@@ -2,10 +2,11 @@ body {
   background-color: black;
 }
 
-body>div.container {
+.container {
   width: 70%;
   margin: auto;
   color: white;
+  
 }
 
 /* Top of page things */
@@ -57,3 +58,8 @@ body>div.container {
   html{
     scroll-behavior: smooth;
   }
+@media screen and (max-width: 700px){
+  .container{
+    width: 80%;
+  }
+}
