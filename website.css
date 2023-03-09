@@ -1,0 +1,62 @@
+body{
+    background-color: white;
+    font-family: "Merriweather", sans-serif;
+}
+.nav-image{
+    /* border: 2px solid black; */
+    margin-right: 1rem;
+}
+
+.parallax {
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content{
+    position: absolute;
+    margin-left: 15%;
+    z-index: 1000;
+    color: white;
+    text-shadow: 1px 1px grey;
+}
+.parallax-header{
+    font-weight: bold;
+}
+.parallax-text{
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+    width: 80%;
+    font-weight: lighter;
+}
+
+.circle-images{
+    display: block;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.image-title{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.page-header{
+    margin-bottom: 2rem;
+}
+
+.content-row{
+    padding: 1rem;
+}
